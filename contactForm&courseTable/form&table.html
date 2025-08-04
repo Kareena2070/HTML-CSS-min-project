@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+        <label for="fullname">Full name: </label>
+        <input type="text" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="tel">Phone: </label>
+        <input type="tel" name="tel" id="tel" placeholder="+91 98765 43210" required>
+        <br><br>
+        <label for="subject">Subject: </label>
+        <select name="subject" id="subject" required>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Feedback">Feedback</option>
+        </select>
+        <br><br>
+        <label for="message">Message: </label>
+        <textarea name="message" id="message" placeholder="write your message here..." required></textarea>
+        <br><br>
+        <input type="submit" name="submit" value="Send Message">
+        <br><br>
+        <input type="reset" value="Clear form">
+    </form>
+    
+    
+</body>
+</html>
