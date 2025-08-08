@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Perferences Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="">
+        <h1>User Registration and Perferences Form</h1>
+        <div>
+        <h3>Personal Information Section</h3>
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+       
+        <div>
+            <label for="modile">Mobile Number (with validation pattern):</label>
+            <input type="tel" id="modile", name="modile">
+        </div>
+        <div>
+            <label for="dob">Date of apply:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+            <label for="month">Birth Year:</label>
+            <input type="month" id="month" name="month">
+        </div>
+        <div>
+            <label for="week">Choose a Week for Newsletter Delivery:</label>
+            <input type="week" id="week" name="week">
+        </div>
+        <div>
+            <label for="time">Preferred Contact Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        <div>
+            <label for="datetime-local">Book a Demo Slot:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+        </div>
+        </div>
+
+        <br><br>
+        <div>
+            <h3> Address Section</h3>
+            <div>
+                <label for="text">Street Address, City:</label>
+                <input type="text" name="text" id="text">
+            </div>
+            <div>
+                <label for="Number">House/Flat Number:</label>
+                <input type="number" id="number" name="number">
+            </div>
+            <div>
+                <label for="url">Your Personal Website or Portfolio Link:</label>
+                <input type="url" name="url" id="url">
+            </div>
+        </div>
+
+        <br><br>
+        <div>
+            <h3>File Upload Section:</h3>
+            <div>
+                <label for="File">Upload Profile Picture / Resume (with accept and multiple):</label>
+                <input type="file" name="file" id="file">
+            </div>
+        </div>
+
+        <br><br>
+        <div>
+            <h3>Preferences Section</h3>
+            <div>
+                <label for="interest">Hobbies or Interests:</label>
+                <input type="checkbox" name="panting" id="panting" value="panting">
+                <label for="panting">I like doing panting.</label>
+                <input type="checkbox" name="dance" id="dance" value="dance">
+                <label for="dance">I like dancing.</label>
+                <input type="checkbox" id="writing" name="writing" value="writing">
+                <label for="writing">I like to writing book.</label>
+            </div>
+           <br>
+            <div>
+                <label for="range">Set Your Preferred Font Size (0 to 10):</label>
+                <input type="range" name="range" id="radio" min="1" max="10">
+            </div>
+            <br>
+            <div>
+                <label for="gsearch">Search for Your City:</label>
+                <input type="search" id="gsearch" name="gsearch">
+            </div>
+        
+            <div>
+                <label for="text">Security Question Answer:</label>
+                <input type="text" name="text" id="text">
+            </div>
+            </div>
+            <br><br>
+
+            <div>
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" id="feedback">here.......</textarea>
+            </div>
+                
+
+            <div class="btnSumit">
+            <button type="button">Submit the Form</button>
+            </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
