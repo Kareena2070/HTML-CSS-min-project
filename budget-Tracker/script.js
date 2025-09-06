@@ -53,3 +53,26 @@ div.append(input, btnIncome, btnExpense, balance);
 document.head.append(style);
 document.body.append(heading, div);
 
+
+
+function createBudgetTracker(){
+    let balance = 0;
+
+    return {
+        addIncome(amount){
+            balance+=amount;
+            message()
+        },
+        addExpense(amount){
+            balance-=amount;
+            message()
+        },
+        getBalance(){
+            return balance
+        }
+    }
+}
+
+const tracker = createBudgetTracker();
+
+

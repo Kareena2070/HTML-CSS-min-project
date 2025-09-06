@@ -1,4 +1,4 @@
-const body = document.querySelector("body")
+        const body = document.querySelector("body")
 body.style.padding = "2rem 3rem"
 
 
