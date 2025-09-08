@@ -1,0 +1,47 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for traffic light */
+div {
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              
+    width: fit-content;
+    margin: 50px auto;      
+    background-color: #333; /
+}
+
+/* Common styles for lights */
+.one, .two, .three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Individual light colors */
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: yellow;
+    color: black; 
+}
+
+.three {
+    background-color: green;
+}
