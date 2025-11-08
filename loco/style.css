@@ -21,7 +21,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: none;
+    /* display: none; */
     z-index: 99;
 }
 #loader h1 {
@@ -93,6 +93,9 @@ html, body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    transition: all ease 0.3s;
+    background-size:cover;
+    background-position: start;
 }
 
 .elem{
@@ -148,7 +151,7 @@ html, body {
 .elem .moving .moving-in h5{
     color: #000;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     transition: all ease 0.3s;
     transition-delay: 0.2s;
     opacity: 0;

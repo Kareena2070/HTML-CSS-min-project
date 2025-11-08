@@ -1,9 +1,7 @@
 const scroll = new LocomotiveScroll({
-    //  el: document.querySelector('#main'),
     el: document.querySelector('#main'),
     smooth: true
 });
-
 
 function loading(){
     var tl = gsap.timeline()
@@ -33,10 +31,24 @@ function loading(){
     tl.to("#loader", {
         display: "none",
     })
-
-
 }
-
 loading();
 
 
+let elems = document.querySelectorAll('.elem')
+let page2 = document.querySelector('#page2')
+
+elems.forEach(function(ele){
+    ele.addEventListener('mousemove', function(){
+        let bgimg = ele.getAttribute('data-img')
+        page2.style.backgroundImage = `url(${bgimg})`
+        ele.style.color = "#000"
+        
+    })
+})
+elems.forEach(function(ele){
+    ele.addEventListener('mouseleave', function(){
+        ele.style.color = "#fff"
+        
+    })
+})
