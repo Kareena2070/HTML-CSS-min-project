@@ -1,7 +1,4 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+
 
 function loading(){
     var tl = gsap.timeline()
@@ -33,6 +30,17 @@ function loading(){
     })
 }
 loading();
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+document.querySelector("#footer h2").addEventListener("click", function(){
+    scroll.scrollTo(0)
+})
+
+
 
 
 let elems = document.querySelectorAll('.elem')
