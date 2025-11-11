@@ -5,9 +5,16 @@
     font-family: gilroy;
     color: #fff;
 }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 nav{
     position: fixed;
-    background-color: #000;
+    background-color: #111;
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -32,36 +39,16 @@ nav{
 
 .nav-elem h5{
     margin-bottom: 0.8vw;
-    background-color: red;
-    opacity: 0;
+    display: none;
+    overflow: hidden;
 }
 
 .nav-elem h5 span{
     font-size: 0.7vw;
     font-weight: 400;
     display: inline-block;
+    transform: translateY(25px);
 }
-
-nav:hover #nav-buttom{
-    height: 100%;
-    bottom: -100%;
-    background-color: #000;
-}
-
-#nav-buttom{
-    position: absolute;
-    height: 0%;
-    width: 80%;
-    bottom: 0%;
-    border-bottom: 1px solid #dadada;
-    transition: all ease 0.5s;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1vw 15vw;
-    padding-left: 20vw;
-}
-
 
 nav button{
     background-color: #0BA34E;
@@ -75,7 +62,6 @@ nav button{
 
 #nav-bottom{
     width: 80%;
-    /* height: 20vh; */
     height: 0vh;
     position: absolute;
     background-color: #000;
