@@ -9,20 +9,87 @@ nav{
     position: fixed;
     background-color: #000;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding: 2vw 10.5vw;
     justify-content: space-between;
+    height: 11vh;
 }
 #navbar{
     display: flex;
-    align-items: center;
-    gap: 3vw;
+    align-items: flex-start;
+    gap: 2vw;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
 }
 #navbar h4{
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 0.8vw;
+    margin-bottom: 2.6vw;
 }
+
+.nav-elem h5{
+    margin-bottom: 0.8vw;
+    background-color: red;
+    opacity: 0;
+}
+
+.nav-elem h5 span{
+    font-size: 0.7vw;
+    font-weight: 400;
+    display: inline-block;
+}
+
+nav:hover #nav-buttom{
+    height: 100%;
+    bottom: -100%;
+    background-color: #000;
+}
+
+#nav-buttom{
+    position: absolute;
+    height: 0%;
+    width: 80%;
+    bottom: 0%;
+    border-bottom: 1px solid #dadada;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1vw 15vw;
+    padding-left: 20vw;
+}
+
+
+nav button{
+    background-color: #0BA34E;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#nav-bottom{
+    width: 80%;
+    /* height: 20vh; */
+    height: 0vh;
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+
 
 #page1{
     height: 100vh;
@@ -35,7 +102,7 @@ nav{
 }
 
 #page1 h1{
-    font-size: 8.5vw;
+    font-size: 10vw;
     font-weight: 900;
     line-height: 15vh;
 }
