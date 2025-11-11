@@ -21,6 +21,7 @@ nav{
     padding: 2vw 10.5vw;
     justify-content: space-between;
     height: 11vh;
+    z-index: 10;
 }
 #navbar{
     display: flex;
@@ -70,12 +71,7 @@ nav button{
     border-bottom: 1px solid #fff;
 }
 
-
-
-
-
-
-
+/* Page 1 style */
 
 #page1{
     height: 100vh;
@@ -117,6 +113,58 @@ nav button{
 
 #page1 #works h4:nth-last-child(2){
     border: none;
+}
+
+#moving-div{
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    width: 44%;
+    white-space: nowrap;
+    padding: 2vw;
+    overflow: hidden;
+}
+#moving-div .move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img{
+    height: 1.3vw;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#blur-left{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    background: linear-gradient(to right, #000,  transparent);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    background: linear-gradient(to right, transparent, #000);
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 #page2{
