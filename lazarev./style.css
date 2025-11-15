@@ -246,7 +246,6 @@ nav button{
     justify-content: center;
 }
 
-
 .page3-center {
     /* background-color: red; */
     display: flex;
@@ -301,3 +300,51 @@ nav button{
 
 }
 
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    padding: 8vw 10.5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    justify-content: space-between;
+}
+
+#page4-left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#page4-left h1 {
+    font-size: 3vw;
+    color: #000;
+    font-weight: bolder;
+}
+
+#page4-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.elem{
+    position: relative;
+    padding-top: 2vw;
+    border-top: 1px solid #918f8f;
+}
+
+.elem p{
+    color: #000;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
