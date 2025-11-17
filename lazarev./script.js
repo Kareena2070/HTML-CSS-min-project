@@ -95,3 +95,23 @@ function page3VideoAnimation(){
     })
 }
 page3VideoAnimation();
+
+function page6VideoAnimation(){
+    let sec = document.querySelectorAll(".sec-right ")
+
+    sec.forEach(function (s) {
+
+        s.addEventListener("mouseenter", function () {
+            s.childNodes[3].style.opacity = 1;
+            s.childNodes[3].play();
+        })
+
+        s.addEventListener("mouseleave", function () {
+            s.childNodes[3].style.opacity = 0;
+            s.childNodes[3].load();
+        })
+    })
+}
+
+page6VideoAnimation();
+
