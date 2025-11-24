@@ -537,8 +537,95 @@ nav button{
     text-transform: uppercase;
 }
 
-    
-.page7 #page7-right{
+#page7-right{
     width: 70%;
-    font-size: 1.2vw;
+}
+
+#page7-right>p{
+    font-size: 2.5vw;
+    line-height: 1.2;
+}
+
+#page7-content{
+    width: 100%;
+    margin-top: 10vh;
+    /* background-color: #0BA34E; */
+    padding: 3vh 0;
+    border-top: 1px solid #fff;
+}
+#page7-content>h1{
+    font-size: 3.2vw;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#page7-content #flex{
+    display: flex;
+    margin: 4vh 0;
+    gap: 0.3vw;
+}
+
+#page7-content #flex h4{
+    border-radius: 50px;
+    border: 0.5px solid #fff;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+
+.page7-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+    /* background-color: #0BA34E; */
+    position: relative;
+}
+.page7-elem p{
+    width: 60%;
+    font-size: 0.8vw;
+    position: relative;
+    z-index: 8;
+}
+
+.page7-elem h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+     position: relative;
+    z-index: 8;
+}
+
+.page7-elem i{
+    font-size: 1.3vw;
+     position: relative;
+    z-index: 8;
+}
+
+.over7{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    /* z-index: 8; */
+}
+
+.page7-elem:hover h3{
+    padding-left: 1vw;
+}
+
+.page7-elem:hover i{
+    padding-right: 1vh;
+}
+
+
+.page7-elem:hover .over7{
+    opacity: 1;
+    transform: translateY(0);
+    border-top: 1px solid #fff;
 }
