@@ -115,3 +115,23 @@ function page6VideoAnimation(){
 
 page6VideoAnimation();
 
+
+
+function page7iconArrow(){
+    
+    document.querySelectorAll("details").forEach((detail) => {
+    const icon = detail.querySelector("summary i");
+
+        detail.addEventListener("toggle", () => {
+            if (detail.open) {
+                icon.classList.remove("ri-arrow-down-wide-line");
+                icon.classList.add("ri-arrow-up-wide-line");
+            } else {
+                icon.classList.remove("ri-arrow-up-wide-line");
+                icon.classList.add("ri-arrow-down-wide-line");
+            }
+        });
+    });
+
+}
+page7iconArrow();
